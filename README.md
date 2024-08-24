@@ -1,5 +1,11 @@
 # Meus Scripts
 
+<div align="right">
+  
+[![HitCount](https://hits.dwyl.com/JVSMOTA/MeusScripts.svg?style=flat-square)](http://hits.dwyl.com/JVSMOTA/MeusScripts)
+
+</div>
+
 ## 📝 Descrição
 Aqui guardo meus scripts mais usados diariamente para ajudar na produção diária.
 
