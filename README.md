@@ -34,7 +34,7 @@ Aqui guardo meus scripts mais usados diariamente para ajudar na produção diár
 
 	```bash
 	# Alias for showing commit message types
-	alias commit='cat ~/.tipos-commit.md'	
+	alias commit='cat ~/.commit-types.md'	
 	
 	# Script to add emojis to commit message
 	git() {
