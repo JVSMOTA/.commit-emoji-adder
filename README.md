@@ -32,27 +32,27 @@ Aqui guardo meus scripts mais usados diariamente para ajudar na produção diár
 
 - Adicione o código abaixo no `.bashrc`:
 
-	```bash
-    # Alias for showing commit message types
-    alias commit='cat ~/.commit-types.md'
+```bash
+# Alias for showing commit message types
+alias commit='cat ~/.commit-types.md'
 
-    # Script to add emojis to commit message
-    git() {
-        if [ "$1" = "commit" ] && [ "$2" = "-m" ]; then
-            # Call custom commit script
-            ~/.commit-icons.sh "$3"
-        else
-            # Use the original git command for all other cases.
-            command git "$@"
-        fi
-    }
-	```
+# Script to add emojis to commit message
+git() {
+    if [ "$1" = "commit" ] && [ "$2" = "-m" ]; then
+        # Call custom commit script
+        ~/.commit-icons.sh "$3"
+    else
+        # Use the original git command for all other cases.
+        command git "$@"
+    fi
+}
+```
 
 - Carregue as mudanças no seu shell atual:
 
-	```bash
-	source ~/.bashrc
-	```
+```bash
+source ~/.bashrc
+```
 
 ## 💡 Como Usar
 
