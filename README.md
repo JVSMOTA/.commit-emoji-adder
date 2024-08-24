@@ -35,11 +35,11 @@ Aqui guardo meus scripts mais usados diariamente para ajudar na produção diár
 	```bash
 	git() {
 	    if [ "$1" = "commit" ] && [ "$2" = "-m" ]; then
-    	    # Call custom commit script
-        	~/.commit-icons.sh "$3"
+			# Call custom commit script
+			~/.commit-icons.sh "$3"
     	else
-        	# Use the original git command for all other cases.
-        	command git "$@"
+			# Use the original git command for all other cases.
+			command git "$@"
     	fi
 	}
 	```
