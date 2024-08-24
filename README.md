@@ -8,6 +8,7 @@ Aqui guardo meus scripts mais usados diariamente para ajudar na produção diár
 
 	```bash
 	$ ls
+	.tipos-commit.md
 	.git-commit.sh
 	```
 
@@ -39,14 +40,13 @@ Aqui guardo meus scripts mais usados diariamente para ajudar na produção diár
 	source ~/.bashrc
 	```
 
+- Para usar `.git-commit.sh`, dentro de um diretório com git faça normalmente em seus commits:
 
-
-- Para o script .tipos-commit.md, ele é apenas para facilitar na hora de decidir qual tipo de commit usar. Dessa forma, adicione o alias no .bashrc:
-
-	```bash
-	alias commit='cat ~/local/do/script/.tipos-commit.md'
+    ```bash
+    git commit -m "<tipo:> <mensagem>"
     ```
-- Para usá-lo, reinicie o terminal e use:
+
+- Para usar `.tipos-commit.md`, faça:
 
 	```bash
 	commit    
