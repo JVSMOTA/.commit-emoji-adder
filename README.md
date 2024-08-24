@@ -12,7 +12,7 @@ Aqui guardo meus scripts mais usados diariamente para ajudar na produção diár
 | .commit-icons.sh | Adicionar emoji aos commits                                                    |
 | .commit-types.md | Mostrar tipos de commit possíveis                                              |
 
-<div>
+</div>
 
 ## 🚀 Como iniciar
 
