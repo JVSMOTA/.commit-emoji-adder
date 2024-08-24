@@ -11,6 +11,8 @@ Aqui guardo meus scripts mais usados diariamente para ajudar na produção diár
 
 ## 🎯 Scripts e Descrições
 
+![Exemplo de execução](images/exemplo-script.png)
+
 <div align="center">
 
 | Script           | Descrição                                                                      |
