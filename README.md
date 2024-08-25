@@ -15,10 +15,10 @@ Aqui guardo meus scripts mais usados diariamente para ajudar na produção diár
 
 <div align="center">
 
-| Script           | Descrição                                                                      |
-|------------------|--------------------------------------------------------------------------------|
-| .commit-icons.sh | Adicionar emoji aos commits                                                    |
-| .commit-types.md | Mostrar tipos de commit possíveis                                              |
+| Script                                       | Descrição                         |
+|----------------------------------------------|-----------------------------------|
+| [.commit-icons.sh](scripts/.commit-icons.sh) | Adicionar emoji aos commits       |
+| [.commit-types.md](scripts/.commit-types.md) | Mostrar tipos de commit possíveis |
 
 </div>
 
