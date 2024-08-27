@@ -1,8 +1,8 @@
 # Meus Scripts
 
 <div align="right">
-  
-[![HitCount](https://hits.dwyl.com/JVSMOTA/MeusScripts.svg?style=flat-square)](http://hits.dwyl.com/JVSMOTA/MeusScripts)
+
+[![Hits](https://hits.sh/github.com/JVSMOTA/MeusScripts.svg)](https://hits.sh/github.com/JVSMOTA/MeusScripts/)  
 
 </div>
 
