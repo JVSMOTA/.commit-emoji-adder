@@ -22,8 +22,6 @@ git clone https://github.com/JVSMOTA/.commit-emoji-adder.git
 echo '
 # SCRIPT TO ADD EMOJI
 
-export PATH=$PATH:~/.commit-emoji-adder/bin
-
 git() {
     ~/.commit-emoji-adder/bin/git "$@"
 }
@@ -57,7 +55,11 @@ $ git commit -m "feat: Adicionar nova funcionalidade de autenticação"
  1 file changed, 0 insertions(+), 0 deletions(-)
 ```
 
-Note que o script `git` irá automaticamente adicionar o emoji apropriado com base no tipo de commit especificado.
+Note que o script `git` irá adicionar automaticamente o emoji apropriado com base no tipo de commit especificado. Mas caso sinta dúvidas, execute:
+
+```bash
+git commit -m ?
+```
 
 ### Observações
 
