@@ -8,7 +8,11 @@
 
 ## Exemplo de execução
 
+<div align="right">
+
 ![Exemplo de execução](https://github.com/user-attachments/assets/c004bf61-fc18-49c1-8bf7-c7ad7187f37c)
+
+</div>
 
 ## Como instalar
 
