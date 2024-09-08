@@ -8,7 +8,7 @@
 
 ## 🎯 Exemplo de execução
 
-![Exemplo de execução](images/exemplo-git.png)
+![Exemplo de execução](https://github.com/user-attachments/assets/2650052e-aa51-4921-943e-889a5b3c3fc3)
 
 ## 💡 Como instalar
 
