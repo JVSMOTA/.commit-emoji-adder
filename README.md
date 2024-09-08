@@ -23,7 +23,12 @@ git clone https://github.com/JVSMOTA/.commit-emoji-adder.git
 
 - Execute o código abaixo para detecção do comando git:
 ```bash
-echo '# SCRIPT TO ADD EMOJI\ngit() {\n    ~/.commit-emoji-adder/bin/git "$@"\n}' >> ~/.bashrc
+echo '# SCRIPT TO ADD EMOJI
+git() {
+    ~/.commit-emoji-adder/bin/git "$@"
+}
+' >> ~/.bashrc
+
 ```
 
 - Por fim, carregue as mudanças no seu shell atual:
