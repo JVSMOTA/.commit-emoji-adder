@@ -6,57 +6,50 @@
 
 </div>
 
-## 📝 Descrição
-Aqui guardo meus scripts mais usados diariamente para ajudar na produção diária.
-
-## 🎯 Scripts e Descrições
+## 🎯 Exemplo de execução
 
 ![Exemplo de execução](images/exemplo-git.png)
 
-<div align="center">
+## 💡 Como instalar
 
-| Script               | Descrição                         |
-|----------------------|-----------------------------------|
-| [git](bin/git)       | Adiciona emoji aos commits        |
-| [commit](bin/commit) | Mostrar tipos de commit possíveis |
-
-</div>
-
-## 💡 Como Usar
-
-- Execute:
-
+- Faça o clone do projeto no diretório `~/`:
 ```bash
-# Script to add emojis to commit message
+git clone https://github.com/JVSMOTA/.commit-emoji-adder.git
+```
+
+- Execute o código abaixo para detecção do comando git:
+```bash
+echo '
+# SCRIPT TO ADD EMOJI
+
+export PATH=$PATH:~/.commit-emoji-adder/bin
+
 git() {
-    if [ "$1" = "commit" ] && [ "$2" = "-m" ]; then
-        ~/.commit-emoji-adder/bin/git "$3"
-    else
-        command git "$@"
-    fi
+    ~/.commit-emoji-adder/bin/git "$@"
 }
+' >> ~/.bashrc
 ```
 
+- Em seguida, torne os scripts executáveis:
 ```bash
-chmod +x ~/bin/git ~/bin/commit && echo 'export PATH=$PATH:~/bin' >> ~/.bashrc
+chmod +x ~/.commit-emoji-adder/bin/git ~/.commit-emoji-adder/bin/commit
 ```
 
-- Carregue as mudanças no seu shell atual:
-
+- Por fim, carregue as mudanças no seu shell atual:
 ```bash
 source ~/.bashrc
 ```
 
-### Usando `commit-icons`
+### Como usar 
 
 1. Navegue até o diretório do seu projeto que está usando Git.
-2. Ao fazer commits, utilize o script para adicionar automaticamente emojis de acordo com o tipo de commit. Basta seguir a estrutura de mensagem padrão:
+2. Ao fazer commits, automaticamente os emojis são adicionados de acordo com o tipo de commit especificado. Basta seguir a estrutura de mensagem padrão:
 
 ```bash
 git commit -m "<tipo>: <mensagem>"
 ```
 
-   - **Exemplo:** Para adicionar uma nova funcionalidade, você pode usar:
+- **Exemplo:** Para adicionar uma nova funcionalidade, você pode usar:
 
 ```bash
 $ git commit -m "feat: Adicionar nova funcionalidade de autenticação"
@@ -64,25 +57,11 @@ $ git commit -m "feat: Adicionar nova funcionalidade de autenticação"
  1 file changed, 0 insertions(+), 0 deletions(-)
 ```
 
-   Note que o script `.commit-icons.sh` irá automaticamente adicionar o emoji apropriado com base no tipo de commit especificado.
-
-### Usando `.commit-types.md`
-
-1. Para visualizar uma lista dos tipos de commits e seus emojis associados, use o comando:
-
-```bash
-commit
-```
-
-   Isso exibirá os tipos de commit disponíveis e os emojis correspondentes para ajudá-lo a escolher o tipo certo para sua mensagem de commit.
-
----
+Note que o script `git` irá automaticamente adicionar o emoji apropriado com base no tipo de commit especificado.
 
 ### Observações
 
-- Certifique-se de que o script `commit-icons` esteja configurado corretamente e tenha permissões de execução.
-- A lista de tipos de commit e seus emojis podem ser personalizada no arquivo `commit-types`.
-
----
+- Certifique-se de que o script `bin/git` esteja configurado corretamente e tenha permissões de execução.
+- A lista de tipos de commit e seus emojis podem ser personalizada no arquivo `bin/commit`.
 
 Essa estrutura de uso visa garantir que suas mensagens de commit sigam uma convenção clara e padronizada, facilitando a leitura e o entendimento do histórico de commits por todos os membros da equipe.
