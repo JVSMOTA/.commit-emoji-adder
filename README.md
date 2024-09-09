@@ -18,22 +18,14 @@
 
 - Faça o clone do projeto no diretório `~/`:
 ```bash
-git clone https://github.com/JVSMOTA/.commit-emoji-adder.git
-```
-
-- Execute o código abaixo para detecção do comando git:
-```bash
+git clone https://github.com/JVSMOTA/.commit-emoji-adder.git &&
 echo '# SCRIPT TO ADD EMOJI
 git() {
     ~/.commit-emoji-adder/bin/git "$@"
 }
-' >> ~/.bashrc
-
-```
-
-- Por fim, carregue as mudanças no seu shell atual:
-```bash
+' >> ~/.bashrc &&
 source ~/.bashrc
+
 ```
 
 ### Como usar 
