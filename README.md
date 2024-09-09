@@ -10,7 +10,7 @@
 
 <div align="center">
 
-![Exemplo de execução](https://github.com/user-attachments/assets/c004bf61-fc18-49c1-8bf7-c7ad7187f37c)
+![Exemplo de execução](https://github.com/user-attachments/assets/bde0ec97-3b05-4115-86fb-e3dafc0e6bde)
 
 </div>
 
