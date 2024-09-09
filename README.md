@@ -37,6 +37,8 @@ sed -i '/# SCRIPT TO ADD EMOJI/,+3d' ~/.bashrc
 
 ```
 
+- Em seguida, reinicie o terminal.
+
 ### Como usar 
 
 1. Navegue até o diretório do seu projeto que está usando Git.
