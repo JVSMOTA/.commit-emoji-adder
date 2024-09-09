@@ -16,7 +16,8 @@
 
 ## Como instalar
 
-- Faça o clone do projeto no diretório `~/`:
+- Execute o comando abaixo no diretório `~/`:
+
 ```bash
 git clone https://github.com/JVSMOTA/.commit-emoji-adder.git &&
 echo '# SCRIPT TO ADD EMOJI
@@ -25,6 +26,14 @@ git() {
 }
 ' >> ~/.bashrc &&
 source ~/.bashrc
+
+```
+
+- Caso queira remover do seu sistema, execute:
+
+```bash
+rm -rf ~/.commit-emoji-adder/ &&
+sed -i '/# SCRIPT TO ADD EMOJI/,+3d' ~/.bashrc
 
 ```
 
