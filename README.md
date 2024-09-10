@@ -26,7 +26,7 @@ git clone https://github.com/JVSMOTA/.commit-emoji-adder.git
 - Agora execute:
 
 ```bash
-install-emoji-adder
+bash ~/.commit-emoji-adder/bin/install
 
 ```
 
