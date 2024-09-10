@@ -19,14 +19,14 @@
 - Faça o clone do repositório no diretório `~/`:
 
 ```bash
-git clone https://github.com/JVSMOTA/.commit-emoji-adder.git
+cd ~ && git clone https://github.com/JVSMOTA/.commit-emoji-adder.git
 
 ```
 
 - Para instalar, execute:
 
 ```bash
-bash ~/.commit-emoji-adder/bin/install && source ~/.bashrc
+~/.commit-emoji-adder/bin/install && source ~/.bashrc
 
 ```
 
