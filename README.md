@@ -47,7 +47,8 @@ $ git commit -m "feat: Adicionar nova funcionalidade de autenticação"
  1 file changed, 0 insertions(+), 0 deletions(-)
 ```
 
-Note que o script `git` irá adicionar automaticamente o emoji apropriado com base no tipo de commit especificado. Mas caso sinta dúvidas, execute:
+Note que o script `git` irá adicionar automaticamente o emoji apropriado com base no tipo de commit especificado. 
+Mas caso sinta dúvidas, execute para listar os tipos de commit e emoji associados:
 
 ```bash
 git commit -m ?
@@ -55,14 +56,12 @@ git commit -m ?
 
 > [!NOTE]
 >
-> - Certifique-se de que o script `bin/git` esteja configurado corretamente e tenha permissões de execução.
 > - A lista de tipos de commit e seus emojis podem ser personalizada no arquivo `bin/commit`.
 > 
 > Essa estrutura de uso visa garantir que suas mensagens de commit sigam uma convenção clara e padronizada, facilitando a leitura e o entendimento do histórico de commits por todos os membros da equipe.
 > 
 
-<details>
-    <summary><h2>❌ Como desinstalar</h3></summary>
+## ❌ Como desinstalar
  
 Será removido tanto o diretório `~/.commit-emoji-adder/`, quanto as alterações no `~/bashrc`.
 Basta executar:
@@ -71,5 +70,3 @@ Basta executar:
 uninstall-emoji-adder
  
 ```
-
-</details>
