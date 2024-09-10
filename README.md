@@ -23,14 +23,19 @@ git clone https://github.com/JVSMOTA/.commit-emoji-adder.git
 
 ```
 
-- Agora execute:
+- Para instalar, execute:
 
 ```bash
 bash ~/.commit-emoji-adder/bin/install && source ~/.bashrc
 
 ```
 
-- Caso queira remover do seu sistema, execute:
+- Para desinstalar, execute:
+
+> [!IMPORTANT]
+> 
+> Será removido tanto o diretório, quanto as alterações no `~/bashrc`
+> 
 
 ```bash
 uninstall-emoji-adder
