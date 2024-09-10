@@ -21,6 +21,7 @@
 ```bash
 git clone https://github.com/JVSMOTA/.commit-emoji-adder.git &&
 echo '# SCRIPT TO ADD EMOJI
+alias uninstall-emoji-adder="bash ~/.commit-emoji-adder/bin/uninstall"
 git() {
     ~/.commit-emoji-adder/bin/git "$@"
 }
@@ -32,8 +33,7 @@ source ~/.bashrc
 - Caso queira remover do seu sistema, execute:
 
 ```bash
-rm -rf ~/.commit-emoji-adder/ &&
-sed -i '/# SCRIPT TO ADD EMOJI/,+3d' ~/.bashrc
+uninstall-emoji-adder
 
 ```
 
