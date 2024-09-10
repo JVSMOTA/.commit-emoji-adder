@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+echo '# SCRIPT TO ADD EMOJI
+alias uninstall-emoji-adder="bash ~/.commit-emoji-adder/bin/uninstall"
+git() {
+    ~/.commit-emoji-adder/bin/git "$@"
+}
+' >> ~/.bashrc
+source ~/.bashrc
+
