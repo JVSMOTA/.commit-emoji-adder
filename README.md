@@ -6,7 +6,7 @@
 
 </div>
 
-## Exemplo de execução
+## 💻 Exemplo de execução
 
 <div align="center">
 
@@ -14,7 +14,7 @@
 
 </div>
 
-## Como instalar
+## 🛠️ Como instalar
 
 - Faça o clone do repositório no diretório `~/`:
 
@@ -42,7 +42,7 @@ cd ~ && git clone https://github.com/JVSMOTA/.commit-emoji-adder.git
 > ```
 >
 
-### Como usar 
+### 📖 Como usar 
 
 1. Navegue até o diretório do seu projeto que está usando Git.
 2. Ao fazer commits, automaticamente os emojis são adicionados de acordo com o tipo de commit especificado. Basta seguir a estrutura de mensagem padrão:
@@ -65,9 +65,10 @@ Note que o script `git` irá adicionar automaticamente o emoji apropriado com ba
 git commit -m ?
 ```
 
-### Observações
-
-- Certifique-se de que o script `bin/git` esteja configurado corretamente e tenha permissões de execução.
-- A lista de tipos de commit e seus emojis podem ser personalizada no arquivo `bin/commit`.
-
-Essa estrutura de uso visa garantir que suas mensagens de commit sigam uma convenção clara e padronizada, facilitando a leitura e o entendimento do histórico de commits por todos os membros da equipe.
+> ![NOTE]
+>
+> - Certifique-se de que o script `bin/git` esteja configurado corretamente e tenha permissões de execução.
+> - A lista de tipos de commit e seus emojis podem ser personalizada no arquivo `bin/commit`.
+> 
+> Essa estrutura de uso visa garantir que suas mensagens de commit sigam uma convenção clara e padronizada, facilitando a leitura e o entendimento do histórico de commits por todos os membros da equipe.
+> 
