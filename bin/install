@@ -13,3 +13,5 @@ git() {
 	echo "Emoji adder foi instalado no ~/.bashrc"
 fi
 
+exec bash
+
