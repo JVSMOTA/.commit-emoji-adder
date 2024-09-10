@@ -32,16 +32,13 @@ cd ~ && git clone https://github.com/JVSMOTA/.commit-emoji-adder.git
 
 <details>
     <summary><h3>Para desinstalar, basta executar:</h3></summary>
-
-> [!TIP]
-> 
-> Será removido tanto o diretório `~/.commit-emoji-adder/`, quanto as alterações no `~/bashrc`.
-> 
-> ```bash
-> uninstall-emoji-adder
-> 
-> ```
->
+ 
+Será removido tanto o diretório `~/.commit-emoji-adder/`, quanto as alterações no `~/bashrc`.
+ 
+```bash
+uninstall-emoji-adder
+ 
+```
 
 </details>
 
