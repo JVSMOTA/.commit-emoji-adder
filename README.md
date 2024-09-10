@@ -30,18 +30,6 @@ cd ~ && git clone https://github.com/JVSMOTA/.commit-emoji-adder.git
 
 ```
 
-<details>
-    <summary><h3>Para desinstalar, basta executar:</h3></summary>
- 
-Será removido tanto o diretório `~/.commit-emoji-adder/`, quanto as alterações no `~/bashrc`.
- 
-```bash
-uninstall-emoji-adder
- 
-```
-
-</details>
-
 ### 📖 Como usar 
 
 1. Navegue até o diretório do seu projeto que está usando Git.
@@ -72,3 +60,15 @@ git commit -m ?
 > 
 > Essa estrutura de uso visa garantir que suas mensagens de commit sigam uma convenção clara e padronizada, facilitando a leitura e o entendimento do histórico de commits por todos os membros da equipe.
 > 
+
+<details>
+    <summary><h2>❌ Para desinstalar, basta executar:</h3></summary>
+ 
+Será removido tanto o diretório `~/.commit-emoji-adder/`, quanto as alterações no `~/bashrc`.
+ 
+```bash
+uninstall-emoji-adder
+ 
+```
+
+</details>
