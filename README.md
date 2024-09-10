@@ -30,7 +30,7 @@ cd ~ && git clone https://github.com/JVSMOTA/.commit-emoji-adder.git
 
 ```
 
-### 📖 Como usar 
+## 📖 Como usar 
 
 1. Navegue até o diretório do seu projeto que está usando Git.
 2. Ao fazer commits, automaticamente os emojis são adicionados de acordo com o tipo de commit especificado. Basta seguir a estrutura de mensagem padrão:
