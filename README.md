@@ -16,17 +16,17 @@
 
 ## Como instalar
 
-- Execute o comando abaixo no diretório `~/`:
+- Faça o clone do repositório no diretório `~/`:
 
 ```bash
-git clone https://github.com/JVSMOTA/.commit-emoji-adder.git &&
-echo '# SCRIPT TO ADD EMOJI
-alias uninstall-emoji-adder="bash ~/.commit-emoji-adder/bin/uninstall"
-git() {
-    ~/.commit-emoji-adder/bin/git "$@"
-}
-' >> ~/.bashrc &&
-source ~/.bashrc
+git clone https://github.com/JVSMOTA/.commit-emoji-adder.git
+
+```
+
+- Agora execute:
+
+```bash
+install-emoji-adder
 
 ```
 
