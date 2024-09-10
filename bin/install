@@ -2,7 +2,7 @@
 
 # Check if the script is already installed in ~/.bashrc
 if grep -q '# SCRIPT TO ADD EMOJI' ~/.bashrc; then
-    echo "Emoji adder já está instalado no ~/.bashrc"
+    echo "already installed."
 else
     # Add the script to ~/.bashrc
     echo '# SCRIPT TO ADD EMOJI
@@ -10,6 +10,6 @@ alias uninstall-emoji-adder="bash ~/.commit-emoji-adder/bin/uninstall"
 git() {
     ~/.commit-emoji-adder/bin/git "$@"
 }' >> ~/.bashrc && exec bash
-	echo "Emoji adder foi instalado no ~/.bashrc"
+	echo "done."
 fi
 
