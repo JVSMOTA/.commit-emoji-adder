@@ -40,8 +40,6 @@ cd ~ && git clone https://github.com/JVSMOTA/.commit-emoji-adder.git
 > uninstall-emoji-adder
 > 
 > ```
-> 
-> - Em seguida, reinicie o terminal.
 >
 
 ### Como usar 
