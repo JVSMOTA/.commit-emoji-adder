@@ -26,7 +26,7 @@ cd ~ && git clone https://github.com/JVSMOTA/.commit-emoji-adder.git
 - Para instalar, execute o comando de instalação e atualize o seu terminal:
 
 ```bash
-~/.commit-emoji-adder/bin/install && source ~/.bashrc
+~/.commit-emoji-adder/bin/install
 
 ```
 
