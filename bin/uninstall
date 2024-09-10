@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+rm -rf ~/.commit-emoji-adder/ &&
+sed -i '/# SCRIPT TO ADD EMOJI/,+4d' ~/.bashrc
+
