@@ -65,7 +65,7 @@ Note que o script `git` irá adicionar automaticamente o emoji apropriado com ba
 git commit -m ?
 ```
 
-> ![NOTE]
+> [!NOTE]
 >
 > - Certifique-se de que o script `bin/git` esteja configurado corretamente e tenha permissões de execução.
 > - A lista de tipos de commit e seus emojis podem ser personalizada no arquivo `bin/commit`.
