@@ -62,9 +62,10 @@ git commit -m ?
 > 
 
 <details>
-    <summary><h2>❌ Para desinstalar, basta executar:</h3></summary>
+    <summary><h2>❌ Como desinstalar</h3></summary>
  
 Será removido tanto o diretório `~/.commit-emoji-adder/`, quanto as alterações no `~/bashrc`.
+Basta executar:
  
 ```bash
 uninstall-emoji-adder
