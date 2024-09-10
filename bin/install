@@ -9,7 +9,6 @@ else
 alias uninstall-emoji-adder="bash ~/.commit-emoji-adder/bin/uninstall"
 git() {
     ~/.commit-emoji-adder/bin/git "$@"
-}' >> ~/.bashrc && exec bash
-	echo "done."
+}' >> ~/.bashrc && exec bash && echo "done."
 fi
 
