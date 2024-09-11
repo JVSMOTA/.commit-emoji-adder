@@ -1,14 +1,30 @@
 #!/usr/bin/env bash
 
-# Check if the script is already installed in ~/.bashrc
-if grep -q '# SCRIPT TO ADD EMOJI' ~/.bashrc; then
-    echo "already installed."
-else
-    # Add the script to ~/.bashrc
-    echo '# SCRIPT TO ADD EMOJI
-alias uninstall-emoji-adder="bash ~/.commit-emoji-adder/bin/uninstall"
-git() {
-    ~/.commit-emoji-adder/bin/git "$@"
-}' >> ~/.bashrc && exec bash && echo "done."
+# # Diretório do pacote
+# PACKAGE_DIR="$HOME/.commit-emoji-adder"
+
+# # Verifica se o diretório já existe
+# if [ -d "$PACKAGE_DIR" ]; then
+#     echo "O pacote já está instalado."
+#     exit 1
+# fi
+
+# # Cria diretório para o pacote
+# mkdir -p "$PACKAGE_DIR"
+
+# # Copia arquivos para o diretório de instalação
+# cp -r bin "$PACKAGE_DIR/"
+
+# Adiciona configurações ao .bashrc, se não estiverem presentes
+if ! grep -q '# SCRIPT TO ADD EMOJI' "$HOME/.bashrc"; then
+    echo '# SCRIPT TO ADD EMOJI' >> "$HOME/.bashrc"
+    echo 'git() {' >> "$HOME/.bashrc"
+    echo '    ~/.commit-emoji-adder/bin/git "$@"' >> "$HOME/.bashrc"
+    echo '}' >> "$HOME/.bashrc"
 fi
+
+# Atualiza o bash
+source "$HOME/.bashrc"
+
+echo "Instalação concluída."
 
