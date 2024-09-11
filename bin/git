@@ -4,38 +4,34 @@
 
 # Function to get emoji based on commit type
 get_emoji() {
-    case "$1" in
-        feat)     echo "✨" ;;
-        fix)      echo "🐛" ;;
-        chore)    echo "🔧" ;;
-        docs)     echo "📝" ;;
-        style)    echo "💄" ;;
-        refactor) echo "♻️" ;;
-        test)     echo "✅" ;;
-        perf)     echo "🚀" ;;
-        ci)       echo "👷" ;;
-        build)    echo "🏗️" ;;
-        revert)   echo "⏪" ;;
-        init)     echo "🎉" ;;
-        *)        echo "" ;;
+    local message="$1"
+
+    case "$message" in
+        feat*)      echo "✨" ;;
+        fix*)       echo "🐛" ;;
+        chore*)     echo "🔧" ;;
+        docs*)      echo "📝" ;;
+        style*)     echo "💄" ;;
+        refactor*)  echo "♻️" ;;
+        test*)      echo "✅" ;;
+        perf*)      echo "🚀" ;;
+        ci*)        echo "👷" ;;
+        build*)     echo "🏗️" ;;
+        revert*)    echo "⏪" ;;
+        init*)      echo "🎉" ;;
+        *)          echo "" ;;
     esac
 }
 
-# Check if the command is 'git commit -m'
+# Main script logic
 if [ "$1" = "commit" ] && [ "$2" = "-m" ]; then
     if [ "$3" = "?" ]; then
-        # Show types of commit messages
+        # Show types of commit message
         ~/.commit-emoji-adder/bin/commit
     else
         commit_message="$3"
-
-        # Get the commit type (the part before the first space)
-        commit_type=$(echo "$commit_message" | awk '{print $1}')
-
-        # Get the corresponding emoji
-        emoji=$(get_emoji "$commit_type")
-
-        # Add emoji to the commit message
+        emoji=$(get_emoji "$commit_message")
+        # Add emoji to commit message
         command git commit -m "$emoji $commit_message"
     fi
 else

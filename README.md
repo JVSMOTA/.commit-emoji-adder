@@ -67,5 +67,5 @@ Será removido tanto o diretório `~/.commit-emoji-adder/`, quanto as alteraçõ
 Basta executar:
  
 ```bash
-uninstall-emoji-adder 
+~/.commit-emoji-adder/bin/uninstall
 ```
