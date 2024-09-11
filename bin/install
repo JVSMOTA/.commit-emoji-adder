@@ -8,6 +8,6 @@ else
     echo '# SCRIPT TO ADD EMOJI
 git() {
     ~/.commit-emoji-adder/bin/git "$@"
-}' >> ~/.bashrc && exec bash && echo "done."
+}' >> ~/.bashrc && echo "done." && exec bash
 fi
 
