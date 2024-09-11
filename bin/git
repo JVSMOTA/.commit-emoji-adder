@@ -1,47 +1,45 @@
 #!/usr/bin/env bash
 
-# Script to add emojis to commit message
+# Script to add emojis to commit messages
+
+# Function to get emoji based on commit type
+get_emoji() {
+    case "$1" in
+        feat)     echo "✨" ;;
+        fix)      echo "🐛" ;;
+        chore)    echo "🔧" ;;
+        docs)     echo "📝" ;;
+        style)    echo "💄" ;;
+        refactor) echo "♻️" ;;
+        test)     echo "✅" ;;
+        perf)     echo "🚀" ;;
+        ci)       echo "👷" ;;
+        build)    echo "🏗️" ;;
+        revert)   echo "⏪" ;;
+        init)     echo "🎉" ;;
+        *)        echo "" ;;
+    esac
+}
+
+# Check if the command is 'git commit -m'
 if [ "$1" = "commit" ] && [ "$2" = "-m" ]; then
     if [ "$3" = "?" ]; then
-        # Show types of commit message
+        # Show types of commit messages
         ~/.commit-emoji-adder/bin/commit
     else
         commit_message="$3"
 
-        # Checks the commit type and adds the corresponding emoji
-        if [[ "${commit_message#feat}" != "$commit_message" ]]; then
-            emoji="✨"
-        elif [[ "${commit_message#fix}" != "$commit_message" ]]; then
-            emoji="🐛"
-        elif [[ "${commit_message#chore}" != "$commit_message" ]]; then
-            emoji="🔧"
-        elif [[ "${commit_message#docs}" != "$commit_message" ]]; then
-            emoji="📝"
-        elif [[ "${commit_message#style}" != "$commit_message" ]]; then
-            emoji="💄"
-        elif [[ "${commit_message#refactor}" != "$commit_message" ]]; then
-            emoji="♻️"
-        elif [[ "${commit_message#test}" != "$commit_message" ]]; then
-            emoji="✅"
-        elif [[ "${commit_message#perf}" != "$commit_message" ]]; then
-            emoji="🚀"
-        elif [[ "${commit_message#ci}" != "$commit_message" ]]; then
-            emoji="👷"
-        elif [[ "${commit_message#build}" != "$commit_message" ]]; then
-            emoji="🏗️"
-        elif [[ "${commit_message#revert}" != "$commit_message" ]]; then
-            emoji="⏪"
-        elif [[ "${commit_message#init}" != "$commit_message" ]]; then
-            emoji="🎉"
-        else
-            emoji=""
-        fi
+        # Get the commit type (the part before the first space)
+        commit_type=$(echo "$commit_message" | awk '{print $1}')
 
-        # Add emoji to commit message
+        # Get the corresponding emoji
+        emoji=$(get_emoji "$commit_type")
+
+        # Add emoji to the commit message
         command git commit -m "$emoji $commit_message"
     fi
-
 else
     # Use the original git command for other cases
     command git "$@"
 fi
+
