@@ -1,5 +1,0 @@
-Package: commit-emoji-adder
-Version: 0.0.1
-Architecture: all
-Maintainer: João Vitor Mota <jvmota.sb@gmail.com>
-Description: Adiciona emojis aos commits do Git.
