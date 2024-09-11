@@ -1,20 +1,5 @@
 #!/usr/bin/env bash
 
-# # Diretório do pacote
-# PACKAGE_DIR="$HOME/.commit-emoji-adder"
-
-# # Verifica se o diretório já existe
-# if [ -d "$PACKAGE_DIR" ]; then
-#     echo "O pacote já está instalado."
-#     exit 1
-# fi
-
-# # Cria diretório para o pacote
-# mkdir -p "$PACKAGE_DIR"
-
-# # Copia arquivos para o diretório de instalação
-# cp -r bin "$PACKAGE_DIR/"
-
 # Adiciona configurações ao .bashrc, se não estiverem presentes
 if ! grep -q '# SCRIPT TO ADD EMOJI' "$HOME/.bashrc"; then
     echo '# SCRIPT TO ADD EMOJI' >> "$HOME/.bashrc"

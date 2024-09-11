@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+
+# Script to add emojis to commit messages
+
+# Function to get emoji based on commit type
+get_emoji() {
+    local message="$1"
+
+    case "$message" in
+        feat*)      echo "✨" ;;
+        fix*)       echo "🐛" ;;
+        chore*)     echo "🔧" ;;
+        docs*)      echo "📝" ;;
+        style*)     echo "💄" ;;
+        refactor*)  echo "♻️" ;;
+        test*)      echo "✅" ;;
+        perf*)      echo "🚀" ;;
+        ci*)        echo "👷" ;;
+        build*)     echo "🏗️" ;;
+        revert*)    echo "⏪" ;;
+        init*)      echo "🎉" ;;
+        *)          echo "" ;;
+    esac
+}
+
+# Main script logic
+if [ "$1" = "commit" ] && [ "$2" = "-m" ]; then
+    if [ "$3" = "?" ]; then
+        # Show types of commit message
+        ~/../../usr/bin/.commit-emoji-adder/commit
+    else
+        commit_message="$3"
+        emoji=$(get_emoji "$commit_message")
+        # Add emoji to commit message
+        command git commit -m "$emoji $commit_message"
+    fi
+else
+    # Use the original git command for other cases
+    command git "$@"
+fi

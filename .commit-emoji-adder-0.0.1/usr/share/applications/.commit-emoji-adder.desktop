@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Commit Emoji Adder
+Comment=Script to add emojis to Git commit messages
+Exec=/usr/bin
+Icon=
+Terminal=true
+Categories=Development;Git;
