@@ -1,22 +1,16 @@
 #!/usr/bin/env bash
 
-# Diretório do pacote
-PACKAGE_DIR="$HOME/.commit-emoji-adder"
+# # Diretório do pacote
+# PACKAGE_DIR="$HOME/.commit-emoji-adder"
 
-# Remove o diretório do pacote
-if [ -d "$PACKAGE_DIR" ]; then
-    rm -rf "$PACKAGE_DIR"
-else
-    echo "O pacote não está instalado."
-    exit 1
-fi
+# # Remove o diretório do pacote
+# if [ -d "$PACKAGE_DIR" ]; then
+#     rm -rf "$PACKAGE_DIR"
+# else
+#     echo "O pacote não está instalado."
+#     exit 1
+# fi
 
 # Remove configurações do .bashrc
 sed -i '/# SCRIPT TO ADD EMOJI/d' "$HOME/.bashrc"
-sed -i '/git() {/,+2d' "$HOME/.bashrc"
-
-# Atualiza o bash
-source "$HOME/.bashrc"
-
-echo "Desinstalação concluída."
-
+sed -i '/git() {/,+2d' "$HOME/.bashrc" && exec bash && echo "Desinstalação concluída."
