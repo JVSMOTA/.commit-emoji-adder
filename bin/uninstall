@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-# Remove configurações do .bashrc
-sed -i '/# SCRIPT TO ADD EMOJI/d' "$HOME/.bashrc"
-sed -i '/git() {/,+2d' "$HOME/.bashrc" && exec bash && echo "Desinstalação concluída."

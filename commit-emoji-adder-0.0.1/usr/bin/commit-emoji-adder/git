@@ -27,7 +27,7 @@ get_emoji() {
 if [ "$1" = "commit" ] && [ "$2" = "-m" ]; then
     if [ "$3" = "?" ]; then
         # Show types of commit message
-        ~/../../usr/bin/.commit-emoji-adder/commit
+        ~/../../usr/bin/commit-emoji-adder/commit
     else
         commit_message="$3"
         emoji=$(get_emoji "$commit_message")

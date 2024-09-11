@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Remove configurações do .bashrc
+echo "Executando script prerm..."
 
 # Verificar se o script está sendo executado como root
 if [ "$(id -u)" -eq 0 ]; then
@@ -8,14 +9,17 @@ if [ "$(id -u)" -eq 0 ]; then
     user_home=$(eval echo "~$SUDO_USER")
 
 	sed -i '/# SCRIPT TO ADD EMOJI/d' "$user_home/.bashrc"
-	sed -i '/git() {/,+2d' "$user_home/.bashrc"
-    
+	sed -i '/git() {/,+2d' "$user_home/.bashrc" && echo "Instalação concluída. Por favor, reabra o terminal para aplicar as alterações."
+
 else
     # Se não for root, adicionar diretamente no .bashrc do usuário atual
 	sed -i '/# SCRIPT TO ADD EMOJI/d' "$HOME/.bashrc"
-	sed -i '/git() {/,+2d' "$HOME/.bashrc"
+	sed -i '/git() {/,+2d' "$HOME/.bashrc" && echo "Instalação concluída. Por favor, reabra o terminal para aplicar as alterações."
 
 fi
 
 exit 0
+
+# Executar um novo bash para carregar as alterações
+exec bash
 
