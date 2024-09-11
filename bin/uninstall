@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Diretório do pacote
-PACKAGE_DIR="$HOME/.commit-emoji-adder"
+PACKAGE_DIR="$HOME/../../usr/bin/commit-emoji-adder"
 
 # Remove o diretório do pacote
 if [ -d "$PACKAGE_DIR" ]; then
