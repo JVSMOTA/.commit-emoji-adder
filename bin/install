@@ -20,11 +20,5 @@ if ! grep -q '# SCRIPT TO ADD EMOJI' "$HOME/.bashrc"; then
     echo '# SCRIPT TO ADD EMOJI' >> "$HOME/.bashrc"
     echo 'git() {' >> "$HOME/.bashrc"
     echo '    ~/.commit-emoji-adder/bin/git "$@"' >> "$HOME/.bashrc"
-    echo '}' >> "$HOME/.bashrc"
+    echo '}' >> "$HOME/.bashrc" && exec bash && echo "Instalação concluída."
 fi
-
-# Atualiza o bash
-source "$HOME/.bashrc"
-
-echo "Instalação concluída."
-
