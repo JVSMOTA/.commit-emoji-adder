@@ -45,6 +45,7 @@ git commit -m "<tipo>: <mensagem>"
 $ git commit -m "feat: Adicionar nova funcionalidade de autenticação"
 [master b8a9ca2] ✨ feat: Adicionar nova funcionalidade de autenticação
  1 file changed, 0 insertions(+), 0 deletions(-)
+
 ```
 
 Note que o script `git` irá adicionar automaticamente o emoji apropriado com base no tipo de commit especificado. 
