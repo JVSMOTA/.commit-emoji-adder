@@ -6,7 +6,7 @@
 
 </div>
 
-## 💻 Exemplo de execução
+## 💻 Running example
 
 <div align="center">
 
@@ -14,58 +14,61 @@
 
 </div>
 
-## 🛠️ Como instalar
+## 🛠️ How to install
 
-- Faça o clone do repositório no diretório `~/`:
+- Clone the repository into the directory `~/`:
 
 ```bash
 cd ~ && git clone https://github.com/JVSMOTA/.commit-emoji-adder.git
 
 ```
 
-- Para instalar, execute o comando de instalação:
+- To install, run the install command:
 
 ```bash
 ~/.commit-emoji-adder/bin/install
 
 ```
 
-## 📖 Como usar 
+## 📖 How to use
 
-1. Navegue até o diretório do seu projeto que está usando Git.
-2. Ao fazer commits, automaticamente os emojis são adicionados de acordo com o tipo de commit especificado. Basta seguir a estrutura de mensagem padrão:
+1. Navigate to the directory of your project that is using Git.
+2. When you commit, emojis are automatically added according to the specified commit type. Just follow the standard message structure:
 
 ```bash
-git commit -m "<tipo>: <mensagem>"
+git commit -m "<type>[scope]: <description>"
 ```
 
-- **Exemplo:** Para adicionar uma nova funcionalidade, você pode usar:
+- **Exemple:** To add a new feature, you can use:
 
 ```bash
-$ git commit -m "feat: Adicionar nova funcionalidade de autenticação"
-[master b8a9ca2] ✨ feat: Adicionar nova funcionalidade de autenticação
+$ git commit -m "feat: Add new authentication feature"
+[master b8a9ca2] ✨ feat: Add new authentication feature
  1 file changed, 0 insertions(+), 0 deletions(-)
 
 ```
 
-Note que o script `git` irá adicionar automaticamente o emoji apropriado com base no tipo de commit especificado. 
-Mas caso sinta dúvidas, execute para listar os tipos de commit e emoji associados:
-
-```bash
-git commit -m ?
-```
-
 > [!NOTE]
 >
-> - A lista de tipos de commit e seus emojis podem ser personalizada no arquivo `bin/commit`.
+> Note that the `git` script will automatically add the appropriate emoji based on the specified commit type. 
+> But if you have any doubts, run to list the commit types and associated emoji:
 > 
-> Essa estrutura de uso visa garantir que suas mensagens de commit sigam uma convenção clara e padronizada, facilitando a leitura e o entendimento do histórico de commits por todos os membros da equipe.
+> ```bash
+> git commit -m ?
+> ```
+> 
+> - The list of commit types and their emojis can be customized in the `bin/commit`.
+> 
+> This usage structure is intended to ensure that your commit messages follow a clear and standardized convention, making it easier for all team members to read and understand your commit history.
 > 
 
-## ❌ Como desinstalar
- 
-Será removido tanto o diretório `~/.commit-emoji-adder/`, quanto as alterações no `~/bashrc`.
-Basta executar:
+## ❌ How to uninstall
+
+> [!WARNING]
+> 
+> This will remove both the `~/.commit-emoji-adder/` directory and the changes to `~/bashrc`. 
+
+Simply run:
  
 ```bash
 ~/.commit-emoji-adder/bin/uninstall
